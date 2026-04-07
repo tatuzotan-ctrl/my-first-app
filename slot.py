@@ -56,7 +56,7 @@ st.markdown(f'<p class="msg-font">{st.session_state["message"]}</p>', unsafe_all
 
 # --- メインロジック（スロットを回すボタン） ---
 # iPhoneで押しやすいよう、横幅いっぱいの大きなボタンにする
-if st.button("🐈 SPIN! (スロットを回す) 🐾", use_column_width=True):
+if st.button("🐈 SPIN! (スロットを回す) 🐾", use_container_width=True):
     # ドラムロール的な演出（少し待たせる）
     with st.spinner("にゃんこが走っています..."):
         time.sleep(1.0) # 1秒待つ
